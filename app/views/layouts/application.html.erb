@@ -7,7 +7,48 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
+  <canvas id = "canvas" width = "800" height = "500"></canvas>
+    
+  <div class = "controls">
+    <div class = "size">
+    <p>
+      <label for = "size"> Size: </label>
+      <input id = "size" type = "number" max = 24 min = 1 value = 2>
+    </p>
+    </div>
+    <div>
+      <button id = "clear"> Clear </button>
+    </div>
+    <ul>
+      <li class = "red selected"></li>
+      <li class = "blue"></li>
+      <li class = "green"></li>
+    </ul>
+    <button id ="revealColorSelect"> New Color </button>
+    <div id = "colorSelect">
+      <span id = "newColor"></span>
+      <div class = "sliders">
+        <p>
+          <label for="red"> Red </label>
+          <input id = "red" name = "red" type = "range" min= 0 max = 255 value = 0>
+        </p>
+        <p>
+          <label for="blue"> Blue </label>
+          <input id = "blue" name = "blue" type = "range" min= 0 max = 255 value = 0>
+        </p>
+        <p>
+          <label for="green"> Green </label>
+          <input id = "green" name = "green" type = "range" min= 0 max = 255 value = 0>
+        </p>
+        
+      </div>
+      <div>
+        <button id = "addNewColor"> Add Color </button>
+      </div>
+      
+    </div>
+    
+  </div>
 <%= yield %>
 
 </body>

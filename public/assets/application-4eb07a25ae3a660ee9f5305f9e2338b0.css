@@ -10,9 +10,10 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
- *= require_self
+
+
  */
+
 body {
 	background: #384047;
 	font-family: sans-serif;
@@ -71,20 +72,6 @@ button {
 	display: block;
 	font-size: 16px;
 	line-height: 40px;
-}
-button#clear{
-  background: #68B25B;
-  box-shadow: none;
-  color: black;
-  outline: none;
-  cursor: pointer;
-  display:block;
-  font-size: 16px;
-  line-height: 40px;
-  border-radius: 10px;
-  border: 0;
-  width: 5em;
-  float: right;
 }
 #revealColorSelect {
 	border: none;
